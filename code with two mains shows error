@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    // Prompt the user to enter a number
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Check if the number is positive, negative, or zero
+    if (number > 0) {
+        printf("%d is positive.\n", number);
+    } else if (number < 0) {
+        printf("%d is negative.\n", number);
+    } else {
+        printf("The number is zero.\n");
+    }
+
+    // Determine if the number is even or odd
+    if (number != 0) {
+        if (number % 2 == 0) {
+            printf("%d is even.\n", number);
+        } else {
+            printf("%d is odd.\n", number);
+        }
+    }
+
+    return 0;
+}
+ main () {
+    printf ("hello world");
+}
+
+
+
+
+
+
+/* OBSERVATION 
+
+I WROTE A C CODE WITH TWO MAIN FUNCTIONS 
+
+IT WILL THROW YOU A COMPILING ERROR AND YOUR CODE WONT BE EXECUTED
