@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num[10];
+    printf("just partcing arrays\n ");
+int i;
+
+printf ("enter values to store them in this array ");
+for (int i = 0; i < 10; i++){
+
+scanf("%d", &num[i]);
+
+}
+
+for(int i=0;i<10;i++){
+
+printf("%d\n",num[i]);
+}
+    return 0;
+}
+//this code shows how strings works 
