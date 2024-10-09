@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    printf("Enter numbers: ");
+
+    char array[10]; 
+    int i;
+
+    for (i = 0; i < 10; i++) { 
+        scanf(" %c", &array[i]); // Added space before %c to ignore whitespace
+    }
+    
+    for (i = 0; i < 10; i++) { // Changed <= to <
+        printf("Your entry no %d: %c\n", i, array[i]); 
+    }
+
+    return 0;
+}
