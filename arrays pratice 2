@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    printf("enter numbers ");
+    
+    
+    int array[10];
+        int i;
+        
+       for(i=0;i<=9;i++){
+       
+        scanf("%d",&array[i]);
+     }
+    for(i=0;i<=9;i++){
+        
+        printf(" your entry no %d: %d \n ", i, array[i]);
+    }
+    
+
+    return 0;
+}
