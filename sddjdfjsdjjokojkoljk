@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+
+// Function to search for a student by name or roll number
+void searchStudent(const char *fileName) {
+    FILE *file = fopen(fileName, "r");
+    if (file == NULL) {
+        printf("Error: Unable to open file.\n");
+        return;
+    }
+
+    char name[50];
+    char rollNo[20];
+    char searchName[50];
+    char searchRollNo[20];
+    int found = 0;
+
+    printf("Enter name to search (or leave blank to skip): ");
+    fgets(searchName, sizeof(searchName), stdin);
+    searchName[strcspn(searchName, "\n")] = '\0'; // Remove newline character
+
+    printf("Enter roll number to search (or leave blank to skip): ");
+    fgets(searchRollNo, sizeof(searchRollNo), stdin);
+    searchRollNo[strcspn(searchRollNo, "\n")] = '\0'; // Remove newline character
+
+    while (fscanf(file, "%s %s", name, rollNo) != EOF) {
+        if ((strlen(searchName) == 0 || strcmp(name, searchName) == 0) &&
+            (strlen(searchRollNo) == 0 || strcmp(rollNo, searchRollNo) == 0)) {
+            printf("Student found: Name: %s, Roll No: %s\n", name, rollNo);
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("Student not found.\n");
+    }
+
+    fclose(file);
+}
+
+int main() {
+    char fileName[100];
+    printf("Enter the file name: ");
+    scanf("%s", fileName);
+    getchar(); // Consume newline character left by scanf
+
+    searchStudent(fileName);
+
+    return 0;
+}
