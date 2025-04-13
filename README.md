@@ -1,4 +1,5 @@
 ## index
 
-[HEAP SORT](HEAP SORT)
+[HEAP SORT](HEAP_SORT.c)  
+
 
