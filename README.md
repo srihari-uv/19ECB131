@@ -9,6 +9,9 @@
 [counting sort](counting_sort.c)  
 [Bubble sort](Bubble_sort.c)  
 [Threaded_binary_tree](Threaded_binary_tree.c)  
+[Towers_of_hannoi](towers_of_hannoi.c)  
+[Binary_search_tree](Binary_search_tree.c)  
+[splay tree](splay_tree.c)  
 
 
 
