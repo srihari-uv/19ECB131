@@ -5,4 +5,6 @@
 [linked lists](linkedlists.c)
 [number of letters in a word](numberoflettersinaword.c)  
 [sorting techniques](sorting_techniques.c)  
+[bucket sort](bucket_sort.c)  
+
 
