@@ -45,4 +45,6 @@ int main() {
     printf("Height of the tree: %d\n", height);
 
     return 0;
-}
+}  
+
+//Height of the tree: 2
