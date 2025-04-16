@@ -1,5 +1,6 @@
 ## index
 
+[construction of binary tre](construction_of_binary_tree.c)  
 [Height_of_the_tree](height_of_the_tree.c)  
 [HEAP SORT](HEAP_SORT.c)  
 [INSERTION SORT](INSERTION_SORT.c)  
